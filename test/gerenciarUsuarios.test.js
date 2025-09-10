@@ -15,9 +15,9 @@ describe('Testar as funcionalidades de gerenciamento de usuários', function () 
     // 3. Comparar se o novo nome está no fim da lista de usuários
     expect(listaDeUsuarios.at(-1).nome).to.equal('Jonas');
     expect(listaDeUsuarios.at(-1).email).to.equal('jonas@email.com');
-    expect(listaDeUsuarios.at(-1).email).to.eql({
+    expect(listaDeUsuarios.at(-1)).to.eql({
       nome: 'Jonas',
       email: 'jonas@email.com'
-    })
+    });
   });
 });
