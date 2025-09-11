@@ -1,32 +1,31 @@
 const usuarios = [
   {
-    nome: 'Carol',
-    email: 'carol@email.com'
+    nome: "Thiago",
+    email: "thiago@email.com"
   },
   {
-    nome: 'Thiago',
-    email: 'thiago@email.com'
+    nome: "Carol",
+    email: "carol@email.com"
   },
   {
-    nome: 'Júlio',
-    email: 'julio@email.com'
+    nome: "Nil",
+    email: "nil@email.com"
   },
   {
-    nome: 'Judas',
-    email: 'judas@email.com'
+    nome: "Dalva",
+    email: "dalva@email.com"
   }
 ];
 
-function listarUsuarios() {
+function retornaListaDeUsuarios() {
   return usuarios;
 }
 
-function adicionarNovoUsuario(usuario) {
-  usuarios.push(usuario);
+function adicionarNovoUsuario(novoUsuario) {
+  usuarios.push(novoUsuario);
 }
 
-
 module.exports = {
-  listarUsuarios,
+  retornaListaDeUsuarios,
   adicionarNovoUsuario
 }
